@@ -2,137 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity: Water</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Work Sans', sans-serif;
-      background-color: #FFF8E7;
-      color: #222;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.5rem 2rem;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    nav a {
-      margin-left: 2rem;
-      color: #6D9DC5;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2rem;
-      gap: 2rem;
-    }
-
-    .hero-text {
-      flex: 1 1 400px;
-      max-width: 600px;
-    }
-
-    .hero-text h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero-text p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .cta-buttons {
-      margin-top: 1.5rem;
-      display: flex;
-      gap: 1rem;
-    }
-
-    .cta-buttons a {
-      text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      font-weight: 600;
-    }
-
-    .cta-buttons .primary {
-      background-color: #6D9DC5;
-      color: white;
-    }
-
-    .cta-buttons .donate {
-      background-color: #F9D949;
-      color: #333;
-    }
-
-    .hero-image {
-      flex: 1 1 400px;
-      max-width: 500px;
-    }
-
-    .hero-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .gallery img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .hero-text h1 {
-        font-size: 2.2rem;
-      }
-
-      nav a {
-        margin-left: 1rem;
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
+  <header class="navbar">
     <div class="logo">
-      <img src="https://www.charitywater.org/_nuxt/img/logo-yellow.8cbf6f8.svg" alt="Charity Water Logo">
-      <span style="font-size: 1.4rem; font-weight: bold;">Charity:Water</span>
+      <img src="logo.png" alt="Charity: Water Logo" />
+      <span>Charity:Water</span>
     </div>
     <nav>
       <a href="#">About Us</a>
@@ -140,27 +19,28 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Turn Your Activism Into Lasting Impact With Clean Water</h1>
+  <main class="main-content">
+    <section class="left-column">
+      <h1>Turn Your Activism<br>Into Lasting Impact<br>With Clean Water</h1>
       <p>
         Join charity: water to fund clean water solutions that drive environmental justice,
         public health, and systemic change: powered by 100% transparency and real results.
       </p>
       <div class="cta-buttons">
-        <a href="#" class="primary">Make a Difference Today</a>
-        <a href="#" class="donate">DONATE</a>
+        <a href="#" class="btn secondary">Make a Difference Today</a>
+        <a href="#" class="btn primary">DONATE</a>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="charity_water_Tanzania_TaraShupePhotography_0258 (1).jpg" alt="Child washing face with clean water">
-    </div>
-  </section>
+      <div class="supporting-images">
+        <img src="image1.jpg" alt="People collecting water" />
+        <img src="image2.jpg" alt="Hand holding clean water" />
+      </div>
+    </section>
 
-  <section class="gallery">
-    <img src="JS_20140424_3157 (1).jpg" alt="Buckets of dirty water">
-    <img src="Zimbabwe_2022_CG-0486 (1).jpg" alt="Glass of clean water held in hand">
-  </section>
+    <section class="right-column">
+      <img src="hero.jpg" alt="Child enjoying clean water" />
+    </section>
+  </main>
 
 </body>
 </html>
+
