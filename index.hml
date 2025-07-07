@@ -3,57 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Charity: Water</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Load fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Charity: Water Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="https://raw.githubusercontent.com/jessr020/Charity-Water-Landing-Page/main/images/logo-yellow-box.png" alt="Charity: Water Logo" />
-      <span>Charity:Water</span>
-    </div>
-    <nav>
-      <a href="#">About Us</a>
-      <a href="#">Our Mission</a>
-    </nav>
-  </header>
+  <div class="container">
+    <div class="left-section">
+      <header>
+        <img src="https://i.imgur.com/O6z9O1R.png" alt="Charity:Water Logo" class="logo" />
+        <nav>
+          <a href="#">About Us</a>
+          <a href="#">Our Mission</a>
+        </nav>
+      </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>Turn Your Activism Into Lasting Impact With Clean Water</h1>
-      <p>
-        Join charity: water to fund clean water solutions that drive environmental justice,
-        public health, and systemic change: powered by 100% transparency and real results.
-      </p>
-      <div class="buttons">
-        <button class="secondary">Make a Difference Today</button>
-        <button class="primary">DONATE</button>
+      <main>
+        <h1>Turn Your Activism Into Lasting Impact With Clean Water</h1>
+        <p>
+          Join charity: water to fund clean water solutions that drive environmental justice, 
+          public health, and systemic change: powered by 100% transparency and real results.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary">Make a Difference Today</a>
+          <a href="#" class="btn btn-secondary">Donate</a>
+        </div>
+      </main>
+
+      <div class="supporting-images">
+        <img src="https://via.placeholder.com/160x120" alt="Image 1"/>
+        <img src="https://via.placeholder.com/160x120" alt="Image 2"/>
       </div>
     </div>
-    <div class="hero-right">
-      <img
-        src="https://raw.githubusercontent.com/jessr020/Charity-Water-Landing-Page/main/images/charity_water_Tanzania_TaraShupePhotography_0258.jpg"
-        alt="Child washing with clean water"
-      />
-    </div>
-  </section>
 
-  <!-- Gallery Section -->
-  <section class="gallery">
-    <img
-      src="https://raw.githubusercontent.com/jessr020/Charity-Water-Landing-Page/main/images/JS_20140424_3157.jpg"
-      alt="Buckets of dirty water"
-    />
-    <img
-      src="https://raw.githubusercontent.com/jessr020/Charity-Water-Landing-Page/main/images/Zimbabwe_2022_CG-0486.jpg"
-      alt="Hand holding clean water"
-    />
-  </section>
+    <div class="right-section">
+      <img src="https://via.placeholder.com/600x800" alt="Hero Image" class="hero-image" />
+    </div>
+  </div>
 </body>
 </html>
